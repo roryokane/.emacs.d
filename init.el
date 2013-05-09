@@ -51,6 +51,13 @@
  '(default ((t (:height 140 :foundry "outline" :family "Consolas"))))
  '(fringe ((t (:background "grey95" :foreground "gray75")))))
 
+; system-specific settings
+; structure from http://www.dotemacs.de/multiemacs.html
+(cond
+  ((string-match "mingw" system-configuration)
+   (set-face-attribute 'default nil :height 110)
+   ))
+
 
 ; from http://www.emacswiki.org/emacs/VisualLineMode
 (global-visual-line-mode)

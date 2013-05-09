@@ -56,6 +56,8 @@
 (global-visual-line-mode)
 (setq visual-line-fringe-indicators '(left-curly-arrow right-curly-arrow))
 
+; org-mode configuration
 (setq org-startup-indented t)
+; TODO fix that dedenting subtree (org-shiftmetaleft) can cause it to aggregate headlines below it – subtrees should move below existing complete trees when dedenting
 
 ; organize my settings files so that others can easily copy my settings for just one mode (so I can tell people "copy my Org Mode settings into <path-in-.emacs.d> to get started")

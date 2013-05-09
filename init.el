@@ -58,8 +58,4 @@
 
 (setq org-startup-indented t)
 
-; from http://stackoverflow.com/a/4191441/578288
-;(setq-default cursor-type 'bar)
-; don't need this now that I run Evil
-
 ; organize my settings files so that others can easily copy my settings for just one mode (so I can tell people "copy my Org Mode settings into <path-in-.emacs.d> to get started")

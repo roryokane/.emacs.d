@@ -18,8 +18,10 @@
 ; see evil-maps.el in the evil package for default maps
 ; move up/down by visual lines instead of logical lines
 ; from https://bitbucket.org/lyro/evil/issue/13/movement-along-visual-line-breaks-visual#comment-624510
-(define-key evil-motion-state-map "j" #'evil-next-visual-line)
 (define-key evil-motion-state-map "k" #'evil-previous-visual-line)
+(define-key evil-motion-state-map "j" #'evil-next-visual-line)
+(define-key evil-motion-state-map (kbd "<up>") #'evil-previous-visual-line)
+(define-key evil-motion-state-map (kbd "<down>") #'evil-next-visual-line)
 ; shuffle some motions for easy access to the most common ones
 (define-key evil-motion-state-map "`" #'evil-end-of-line)
 (define-key evil-motion-state-map "0" #'evil-first-non-blank)

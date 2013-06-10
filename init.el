@@ -66,6 +66,9 @@
 (global-visual-line-mode)
 (setq visual-line-fringe-indicators '(left-curly-arrow right-curly-arrow))
 
+(setq x-select-enable-clipboard nil)
+; I want this because it disables copy-on-select (including selecting with the keyboard), allowing me to select some text and then paste to overwrite it
+
 ; org-mode configuration
 (setq org-startup-indented t)
 ; TODO fix that dedenting subtree (org-shiftmetaleft) can cause it to aggregate headlines below it – subtrees should move below existing complete trees when dedenting

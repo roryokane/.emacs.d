@@ -28,6 +28,9 @@
 (define-key evil-motion-state-map "^" #'evil-beginning-of-line)
 (define-key evil-motion-state-map "'" #'evil-goto-mark)
 (define-key evil-motion-state-map "$" #'evil-goto-mark-line)
+(define-key evil-motion-state-map "g`" #'evil-end-of-visual-line)
+(define-key evil-motion-state-map "g0" #'evil-first-non-blank-of-visual-line)
+(define-key evil-motion-state-map "g^" #'evil-beginning-of-visual-line)
 ; not all of these swap mappings have been copied from my .vimrc yet
 ; TODO write equivalent for noremap Y y$ :
 ; (progn (evil-delete) (evil-end-of-line)) gives an error, so that can't be the map

@@ -54,6 +54,9 @@
 (define-key evil-visual-state-map (concat leader "cu") 'uncomment-region)
 )
 
+; TODO add evil-nerd-commenter
+; instructions at https://github.com/redguardtoo/evil-nerd-commenter
+
 ; adaptive-wrap-mode (from the adaptive-wrap package) configuration
 ; TODO configure to be on by default, but only in source-code-editing major modes (especially not org-mode, which defines its own, good wrap-prefix)
 

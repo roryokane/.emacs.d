@@ -36,6 +36,23 @@
 ; (progn (evil-delete) (evil-end-of-line)) gives an error, so that can't be the map
 ; TODO copy other customizations from my .vimrc
 ; no need to list them individually as I remember them
+; from https://github.com/drewfrank/dotfiles/blob/master/.emacs :
+; make esc quit everything.
+; FIXME it isn't working, though
+(define-key evil-normal-state-map [escape] 'keyboard-quit)
+(define-key evil-visual-state-map [escape] 'keyboard-quit)
+(define-key minibuffer-local-map [escape] 'abort-recursive-edit)
+(define-key minibuffer-local-ns-map [escape] 'abort-recursive-edit)
+(define-key minibuffer-local-completion-map [escape] 'abort-recursive-edit)
+(define-key minibuffer-local-must-match-map [escape] 'abort-recursive-edit)
+(define-key minibuffer-local-isearch-map [escape] 'abort-recursive-edit)
+; define a leader key for use in custom mappings.
+(let ((leader ","))
+(define-key evil-normal-state-map (concat leader "cc") 'comment-region)
+(define-key evil-visual-state-map (concat leader "cc") 'comment-region)
+(define-key evil-normal-state-map (concat leader "cu") 'uncomment-region)
+(define-key evil-visual-state-map (concat leader "cu") 'uncomment-region)
+)
 
 ; adaptive-wrap-mode (from the adaptive-wrap package) configuration
 ; TODO configure to be on by default, but only in source-code-editing major modes (especially not org-mode, which defines its own, good wrap-prefix)

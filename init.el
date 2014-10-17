@@ -60,5 +60,3 @@
 (setq scroll-conservatively 10000)
 (setq auto-window-vscroll nil)
 (setq mouse-wheel-scroll-amount '(1 ((shift) . 1) ((control . nil))))
-
-; organize my settings files so that others can easily copy my settings for just one mode (so I can tell people "copy my Org Mode settings into <path-in-.emacs.d> to get started")

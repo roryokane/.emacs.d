@@ -89,8 +89,20 @@
 (global-visual-line-mode)
 (setq visual-line-fringe-indicators '(left-curly-arrow right-curly-arrow))
 
+
+; disable copy-on-select (including selecting with the keyboard), allowing me to select some text and then paste to overwrite it
+; from http://stackoverflow.com/a/23254728/578288 :
+
+; Override the default x-select-text function because it doesn't
+; respect x-select-enable-clipboard on OS X.
+(defun x-select-text (text))
 (setq x-select-enable-clipboard nil)
-; I want this because it disables copy-on-select (including selecting with the keyboard), allowing me to select some text and then paste to overwrite it
+(setq x-select-enable-primary nil)
+(setq mouse-drag-copy-region nil)
+
+(setq interprogram-cut-function 'ns-set-pasteboard)
+(setq interprogram-paste-function 'ns-get-pasteboard)
+
 
 ; org-mode configuration
 (setq org-startup-indented t)

@@ -51,6 +51,14 @@
 ; disable copy-on-select (including selecting with the keyboard), allowing me to select some text and then paste to overwrite it
 (load "~/.emacs.d/disable-copy-on-select-for-os-x.el")
 
+; don’t beep/ding
+; the situations where Emacs beeps are too common and non-exceptional; I don’t want to be warned about them
 (setq ring-bell-function 'ignore)
+
+; smooth scrolling, with both keyboard and mouse
+(setq scroll-step 1)
+(setq scroll-conservatively 10000)
+(setq auto-window-vscroll nil)
+(setq mouse-wheel-scroll-amount '(1 ((shift) . 1) ((control . nil))))
 
 ; organize my settings files so that others can easily copy my settings for just one mode (so I can tell people "copy my Org Mode settings into <path-in-.emacs.d> to get started")

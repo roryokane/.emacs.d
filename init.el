@@ -14,6 +14,8 @@
 
 (load "~/.emacs.d/init_evil.el")
 
+(load "~/.emacs.d/init_org.el")
+
 ; adaptive-wrap-mode (from the adaptive-wrap package) configuration
 ; TODO configure to be on by default, but only in source-code-editing major modes (especially not org-mode, which defines its own, good wrap-prefix)
 
@@ -50,7 +52,5 @@
 (load "~/.emacs.d/disable-copy-on-select-for-os-x.el")
 
 (setq ring-bell-function 'ignore)
-
-(load "~/.emacs.d/init_org.el")
 
 ; organize my settings files so that others can easily copy my settings for just one mode (so I can tell people "copy my Org Mode settings into <path-in-.emacs.d> to get started")

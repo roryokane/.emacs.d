@@ -1,12 +1,15 @@
 ; set up package manager
-; sources:
+; sources of package-archive setup code:
 ; http://marmalade-repo.org/
 ; http://orgmode.org/elpa.html
+; http://melpa.milkbox.net/#/getting-started
 (require 'package)
 (add-to-list 'package-archives 
     '("marmalade" .
       "http://marmalade-repo.org/packages/"))
 (add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/") t)
+(add-to-list 'package-archives
+  '("melpa-stable" . "http://melpa-stable.milkbox.net/packages/") t)
 (package-initialize)
 
 (load "~/.emacs.d/init_evil.el")

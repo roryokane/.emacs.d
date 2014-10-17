@@ -43,7 +43,7 @@
 (define-key minibuffer-local-isearch-map [escape] 'abort-recursive-edit)
 
 ; define a leader key for use in custom mappings.
-(let ((leader ","))
+(let ((leader " "))
 (define-key evil-normal-state-map (concat leader "cc") 'comment-region)
 (define-key evil-visual-state-map (concat leader "cc") 'comment-region)
 (define-key evil-normal-state-map (concat leader "cu") 'uncomment-region)

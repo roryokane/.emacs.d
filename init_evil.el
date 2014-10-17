@@ -52,3 +52,5 @@
 
 ; TODO add evil-nerd-commenter
 ; instructions at https://github.com/redguardtoo/evil-nerd-commenter
+
+; TODO map g- and g+ to corresponding Undo-Tree operations

@@ -7,5 +7,6 @@
 (setq x-select-enable-primary nil)
 (setq mouse-drag-copy-region nil)
 
+; TODO make this cross-platform
 (setq interprogram-cut-function 'ns-set-pasteboard)
 (setq interprogram-paste-function 'ns-get-pasteboard)

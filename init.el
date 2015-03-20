@@ -12,9 +12,9 @@
   '("melpa-stable" . "http://melpa-stable.milkbox.net/packages/") t)
 (package-initialize)
 
-(load "~/.emacs.d/init_evil.el")
-
 (load "~/.emacs.d/init_org.el")
+
+(load "~/.emacs.d/init_evil.el")
 
 ; adaptive-wrap-mode (from the adaptive-wrap package) configuration
 ; TODO configure to be on by default, but only in source-code-editing major modes (especially not org-mode, which defines its own, good wrap-prefix)
